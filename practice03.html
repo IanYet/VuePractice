@@ -6,6 +6,17 @@
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
+<p v-bind:class="{myClass: isTrue}" id="app00">{{myClass}}</p>
+
+<p v-bind:class="myClass" id="app01">{{myClass}}</p>
+
+<p v-bind:class="myClass" id="app02">{{myClass}}</p>
+
+<my-com v-bind:class="{myClass: isTrue}" id="app03"></my-com>
+
+<my-com2 v-bind:class="{myClass: isTrue}" id="app04"></my-com2>
+
+<p v-bind:style="[style1, style2]" id="app05">niHao, zheShiPinYin, niKanDeChuLaiMa?</p>
 
 <script src="practice03.js"></script>
 </body>
