@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app01">
+    <p v-if="type === 'A'">A</p>
+    <p v-else-if="type === 'B'">B</p>
+    <p v-else>C</p>
+</div>
+
+<div id="app02">
+    <template v-if="loginType === 'username'">
+        <label>UserName:</label>
+        <input placeholder="your name" />
+    </template>
+    <template v-else>
+        <label>Email:</label>
+        <input placeholder="your mail"/>
+    </template>
+
+    <input type="button" value="toggle" v-on:click="Toggle('user')"/>
+</div>
+
+<script src="practice04.js"></script>
+</body>
+</html>
