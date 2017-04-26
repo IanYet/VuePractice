@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns ="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app01">
+    <p v-bind:title="messag">{{message}}</p>
+    <input type="text" v-model="message">
+    <input type="button" v-on:click="reverseMessage" value="reverse">
+</div>
+
+<div id="app02">
+    <ol v-if="see">
+        <li v-for = "tod in todo">
+            {{tod.text}}
+        </li>
+    </ol>
+</div>
+
+<div id="app03">
+    <ol>
+        <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+    </ol>
+</div>
+
+<div id="app04">
+    <my-com v-bind:content="message"></my-com>
+</div>
+<script src="practice00.js"></script>
+</body>
+</html>

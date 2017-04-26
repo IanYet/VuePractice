@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<p id="app01" v-once="msg" v-html="rawHtml">{{msg}},&nbsp;{{rawHtml}}</p>
+
+<input id="app02" type="button" v-bind:disabled="bool" v-bind:value="msg.split('').reverse().join('')"/>
+
+<p id="app03" v-bind:title="msg | format">{{msg | anoFormat(10, arg2)}}</p>
+
+<script src="practice01.js"></script>
+</body>
+</html>
