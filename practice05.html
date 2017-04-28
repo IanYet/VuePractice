@@ -28,6 +28,31 @@
     <span v-for="n in 10">{{n}}</span>
 </div>
 
+<div id="app05">
+    <my-com v-for="(item, index) in items" v-bind:item="item" v-bind:index="index"></my-com>
+</div>
+
+<div id="todo-list-example">
+    <input
+            v-model="newTodoText"
+            v-on:keyup.enter="addNewTodo"
+            placeholder="Add a todo"
+    >
+    <ul>
+        <li
+                is="todo-item"
+                v-for="(todo, index) in todos"
+                v-bind:title="todo"
+                v-on:remove="todos.splice(index, 1)"
+        ></li>
+    </ul>
+</div>
+
+<ul id="app06">
+    <li v-for="todo in todos" v-if="!todo.isComplete">
+        {{ todo.value }}
+    </li>
+</ul>
 <script src="practice05.js"></script>
 </body>
 </html>
