@@ -50,3 +50,12 @@ new Vue({
         ]
     }
 });
+
+
+Vue.component('todo-item', {
+    template: '<li>这是个待办项</li>'
+})
+//注意实例化
+var app03 = new Vue({
+    el:'#app05'
+});

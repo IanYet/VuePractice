@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<ul id="app01">
+    <li v-for="(item, index) in items">
+        {{parentMessage}} - {{index}} - {{item.message}}
+    </li>
+</ul>
+
+<div id="app02">
+    <template v-for="(item, index) in items">
+        <p>{{item.message}}</p>
+        <p>{{index}}</p>
+    </template>
+</div>
+
+<div id="app03">
+    <p v-for="(value, key, index) in obj">{{index}}.{{key}}: {{value}}</p>
+</div>
+
+<div id="app04">
+    <span v-for="n in 10">{{n}}</span>
+</div>
+
+<script src="practice05.js"></script>
+</body>
+</html>

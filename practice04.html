@@ -12,14 +12,16 @@
     <p v-else>C</p>
 </div>
 
+
+<!--key de miao yong-->
 <div id="app02">
     <template v-if="loginType === 'username'">
         <label>UserName:</label>
-        <input placeholder="your name" />
+        <input placeholder="your name" key="username" />
     </template>
     <template v-else>
         <label>Email:</label>
-        <input placeholder="your mail"/>
+        <input placeholder="your mail" key="email"/>
     </template>
 
     <input type="button" value="toggle" v-on:click="Toggle('user')"/>
