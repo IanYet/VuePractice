@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>component</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<!--单向传递-->
+<div id="app00">
+    <input v-model="inputMsg"/>
+    <child :my-message="inputMsg"></child>
+</div>
+<script src="practice08.js"></script>
+</body>
+</html>
