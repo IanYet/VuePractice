@@ -8,7 +8,7 @@
 <body>
 <div id="app01">
     <textarea v-model="message"></textarea>
-    <pre><p>{{message}}</p></pre>
+    <pre>{{message}}</pre>
 </div>
 
 <div id="app02">
@@ -28,6 +28,22 @@
     <input type="radio" id="two" value="Two" v-model="picked">
     <label for="two">Two</label>
     <span>Picked: {{ picked }}</span>
+</div>
+
+<div id="app04">
+    <select v-model="selected" v-bind:title="selected">
+        <option v-for="option in options" v-bind:value="option.value">
+            {{option.text}}
+        </option>
+    </select>
+    <span>Selected: {{}}</span>
+</div>
+
+
+<!--//you yi si-->
+<div id="app05">
+    <input type="radio" v-model="pick" v-bind:value="a">
+    <p>{{pick}}</p>
 </div>
 
 

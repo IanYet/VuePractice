@@ -21,3 +21,27 @@ var app03 = new Vue({
         picked: ''
     }
 });
+
+var app04 = new Vue({
+    el: '#app04',
+    data:{
+        selected: 'A',
+        options:[
+            {text: 'one', value: 'A'},
+            {text: 'two', value: 'B'},
+            {text: 'three', value: 'C'}
+        ]
+    }
+});
+
+var app05 = new Vue({
+    el: '#app05',
+    data:{
+        pick: '',
+        a: 'b'
+    }
+});
+
+if(app05.data===app05.value){
+    app05.a = "change";
+}
