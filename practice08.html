@@ -10,10 +10,12 @@
 <!--单向传递-->
 <div id="app00">
     <input v-model="inputMsg"/>
-    <child :my-message="inputMsg"></child>
+    <child :my-message="changeMsg"></child>
 </div>
 
-
+<div id="app01">
+    <com></com>
+</div>
 <script src="practice08.js"></script>
 </body>
 </html>
