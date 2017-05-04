@@ -16,6 +16,16 @@
 <div id="app01">
     <com></com>
 </div>
+
+<div id="app02">
+    <p>{{ total }}</p>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+</div>
+
+<div id="app03">
+    <currency-input v-model="price"></currency-input>
+</div>
 <script src="practice08.js"></script>
 </body>
 </html>
