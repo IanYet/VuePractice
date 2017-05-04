@@ -45,3 +45,16 @@ var app05 = new Vue({
 if(app05.data===app05.value){
     app05.a = "change";
 }
+
+
+var appp06 = new Vue({
+    el: '#app06',
+    data:{
+        message: ''
+    },
+    computed: {
+        upperMsg: function () {
+            return this.message.trim().toUpperCase();
+        }
+    }
+});

@@ -3,7 +3,8 @@
  */
 Vue.component('child', {
     props: ["my-message"],
-    template:'<input :value="myMessage">'
+    template:'<input :value="myMessage">',
+
 });
 
 var app00 = new Vue({
