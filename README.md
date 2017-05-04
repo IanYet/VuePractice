@@ -1,8 +1,8 @@
 # vuePractice
 ## why
 - learn vue.js
-- change some uncomfortable code and add some comments
+- change some uncomfortable code in [official turial](https://cn.vuejs.org/v2/guide/) and add some comments
 ## what
-- primary turial
-- 1.practice00
-  2.practice01
+- primary turial (*based on [official turial](https://cn.vuejs.org/v2/guide/)*)
+1. practice00
+2. practice01
